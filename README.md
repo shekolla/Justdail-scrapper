@@ -8,6 +8,7 @@ A python Programm to extract data of specific business query from a city, from j
   3. extract address
   4. extract rating
   5. extract rating_count
+  6. url
 
 #### Installation
 PIP to install the following packages in Python (https://pip.pypa.io/en/stable/installing/)
@@ -29,4 +30,4 @@ Python LXML, for parsing the HTML Tree Structure using Xpaths (Learn how to inst
 #### Running the scraper
 We would execute the code with the script name followed by the positional arguments keyword and place.
 
-python3 -W ignore justdail.py
+python -W ignore justdail.py --file windows_manufacturers.csv --url http://www.justdial.com/Bengaluru/Upvc-Window-Manufacturers
