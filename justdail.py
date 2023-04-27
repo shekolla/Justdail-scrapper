@@ -3,7 +3,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--url', help='Enter the url you want to scrape')
 parser.add_argument('--file', help='Specify the file name', default="export.csv")
-parser.add_argument('--page_number', help='Specify the amount of pages to query', default=1)
+parser.add_argument('--page_number', help='Specify the amount of pages to query', default=50)
 
 args = parser.parse_args()
 
@@ -82,7 +82,7 @@ def get_address(body):
 # 	return latitutde + ", " + longitude
 
 page_number = 1
-page_limit = args.page_number
+page_limit = int(args.page_number)
 service_count = 1
 
 
